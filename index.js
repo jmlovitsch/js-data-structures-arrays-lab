@@ -1,33 +1,91 @@
 // Write your solution here!
-const drivers = ["Milo", "Otis", "Garfield"];
+
+const drivers = ["Milo", "Otis", "Garfield"]
+let newArray = []
+
 function destructivelyAppendDriver(name) {
-    drivers.push(name)
-};
+    return drivers.push(name)
+}
 
 function destructivelyPrependDriver(name) {
-    drivers.unshift(name)
-};
+    return drivers.unshift(name)
+}
 
 function destructivelyRemoveLastDriver() {
-    drivers.pop()
-};
+    return drivers.pop()
+}
+
 
 function destructivelyRemoveFirstDriver() {
-    drivers.shift()
-};
+    return drivers.shift()
+}
 
 function appendDriver(name) {
-    return [...drivers, name]
-};
+    newArray = [...drivers, name]
+    return newArray
+}
 
 function prependDriver(name) {
-    return [name, ...drivers]
-};
-
-function removeFirstDriver() {
-    return drivers.slice(1)
-};
+    newArray = [name, ...drivers]
+    return newArray
+}
 
 function removeLastDriver() {
-    return drivers.slice(0, drivers.length -1)
+    newArray = drivers.slice(0, -1)
+    return newArray
 }
+
+function removeFirstDriver() {
+    newArray = drivers.slice(1)
+    return newArray
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const drivers = ["Milo", "Otis", "Garfield"];
+// function destructivelyAppendDriver(name) {
+//     drivers.push(name)
+// };
+
+// function destructivelyPrependDriver(name) {
+//     drivers.unshift(name)
+// };
+
+// function destructivelyRemoveLastDriver() {
+//     drivers.pop()
+// };
+
+// function destructivelyRemoveFirstDriver() {
+//     drivers.shift()
+// };
+
+// function appendDriver(name) {
+//     return [...drivers, name]
+// };
+
+// function prependDriver(name) {
+//     return [name, ...drivers]
+// };
+
+// function removeFirstDriver() {
+//     return drivers.slice(1)
+// };
+
+// function removeLastDriver() {
+//     return drivers.slice(0, drivers.length -1)
+// }
